@@ -20,6 +20,7 @@ Easy and fluent lib to use SQL databases in Java applications. Represents result
     <artifactId>json</artifactId>
     <version>20200518</version>
 </dependency>
+```
 
 Also you need the JDBC driver for your database. Examples:
 

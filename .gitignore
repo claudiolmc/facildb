@@ -26,3 +26,6 @@ hs_err_pid*
 .settings/org.eclipse.jdt.apt.core.prefs
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.m2e.core.prefs
+target/maven-archiver/pom.properties
+
+target/*
