@@ -1,5 +1,5 @@
 # FacilDB
-Easy and fluent lib to use SQL databases in Java applications. Represents result sets and records as JSONArrays and JSONObjects.
+Easy and fluent lib to use SQL databases with Java applications. Represents result sets and records as JSONArrays and JSONObjects.
 
 ## Supports
 
