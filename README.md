@@ -1,6 +1,27 @@
 # FacilDB
 Easy and fluent lib to use SQL databases with Java applications. Represents result sets and records as JSONArrays and JSONObjects.
 
+"Facil" in Portuguese means "Easy". 
+
+Using FacilDB is easy as:
+
+```java
+FacilDB db = new FacilMySQL("localhost", "3306", "testdb", "user", "password");
+
+JSONArray jsa = db.select("title, author, isbn")
+                  .from("book")
+                  .where("publisher_id=?")
+                  .param(1001L)
+                  .orderBy("author, title")
+                  .maxResults(50)
+                  .query();
+
+JSONObject rec1 = list.getJSONObject(0);
+String title = rec1.getString("title");
+String author = rec1.getString("author");
+String isbn = rec1.getString("isbn");
+```
+
 ## Supports
 
 - PostgreSQL
